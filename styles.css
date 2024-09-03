@@ -1,0 +1,172 @@
+/* Resetando margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Fonte mais elegante para uma sensação premium */
+    background-color: #D2B48C; /* Castanho claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: auto;
+    background-color: #4B2E2A; /* Castanho escuro para contraste */
+    padding: 20px;
+}
+
+.logo img {
+    display: block;
+    position:relative;
+    justify-content: center;
+    max-width: 250px; /* Definir o tamanho do logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #F5DEB3; /* Tons mais claros para destaque */
+    margin: 20px;
+    border-radius: 8px; /* Arredondamento para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #4B2E2A; /* Cor do texto mais escura */
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+}
+
+.hero-text ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: #4B2E2A;
+}
+
+.hero-text ul li {
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding-left: 15px;
+    border-left: 3px solid #4B2E2A;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4B2E2A;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #6F4E37; /* Um tom mais claro de castanho */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para a Galeria de Imagens */
+.gallery {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4B2E2A;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(30% - 20px); /* Ajusta o tamanho para 30% da largura do contêiner */
+    max-width: calc(30% - 20px); /* Limita a largura máxima para 30% */
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+    }
+}
